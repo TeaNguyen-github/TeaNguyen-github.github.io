@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+{{ macros::header()}}
+
+<section class="content">
+    {{ section.content | safe }}
+</section>
+{% endblock content %}
