@@ -1,5 +1,5 @@
 {
-    description = "Sparrows.dev static site builder.";
+    description = "C4's static site builder.";
 
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs";
@@ -8,9 +8,13 @@
             url = "github:numtide/flake-utils";
         };
 
+        bulma = {
+            url = "github:jgthms/bulma";
+            flake = false;
+        };
     };
 
-    outputs = {self,nixpkgs, flake-utils, ...}:
+    outputs = {self,nixpkgs, flake-utils, bulma, ...}:
 
         flake-utils.lib.eachDefaultSystem (system: 
             let 

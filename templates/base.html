@@ -1,17 +1,19 @@
 {% import "macros.html" as macros %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+data-theme="light">
 
   {{ macros::head() }}
 
   <body class="main-layout">
-    {{ macros::nav(active_tab = "home") }}
+    {{ macros::nav(active_tab = "home")}}
       {% block content %}
-      <section class="content">
-        <h1>
-          There should be something here.
-        </h1>
+      <section class="columns">
+        <div class="column is-4"></div>
+        <div class="is-offset-one-third">
+          <p class="title">Something has gone wrong, Something has gone wrong</p>
+        </div>
       </section>
       {% endblock content %}
 

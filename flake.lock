@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "bulma": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1709714688,
+        "narHash": "sha256-eC0uh1RJDhcZuVilvLWGQZjGs3xImEE7pODGxmSe64E=",
+        "owner": "jgthms",
+        "repo": "bulma",
+        "rev": "16f1b768818af9cfc217e8112ad38b14afc46a44",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jgthms",
+        "repo": "bulma",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -35,6 +51,7 @@
     },
     "root": {
       "inputs": {
+        "bulma": "bulma",
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs"
       }
