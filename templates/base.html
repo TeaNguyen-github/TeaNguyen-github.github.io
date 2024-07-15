@@ -1,0 +1,21 @@
+{% import "macros.html" as macros %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  {{ macros::head() }}
+
+  <body class="main-layout">
+    {{ macros::nav(active_tab = "home") }}
+      {% block content %}
+      <section class="content">
+        <h1>
+          There should be something here.
+        </h1>
+      </section>
+      {% endblock content %}
+
+      {{ macros::footer() }}
+      {{ macros::google_analytics() }}
+
+  </body>

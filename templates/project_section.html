@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+<!-- This is the parent for all sections -->
+
+{% block content %}
+<section class="content">
+<div class="hcenter" style="max-width: 120ch;">
+  {{ section.content | safe}}
+</div>
+  <div >
+
+    <ul class="no-list project-gallery hcenter" style="max-width: 120ch;">
+      {% for entry in section.pages %}
+      <li>
+        <div class="project-box user-projects {% if loop.index % 2 == 0 %} row-reversed {% endif%}">
+          <img alt="mountains" src="{{ get_url(path='img/mountains.jpg', trailing_slash=false) | safe }}" />
+          <div class="project-summary contents">
+            <h3>
+              {{entry.title}}
+            </h3>
+            <p> {{entry.summary | safe}}</p>
+            <a class="project-link" href=" {{entry.permalink | safe}}">
+              {%if entry.extra.link_text %}
+              {{ entry.extra.link_text }}
+              {% else %}
+              Check it out
+              {% endif %}
+            </a>
+          </div>
+        </div>
+
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock content %}

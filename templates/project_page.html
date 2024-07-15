@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="{{page.slug}}" class="content">
+
+    <h2>{{page.title}}</h2>
+    {{page.content | safe}}
+    
+    <pre>
+        {{__tera_context}}
+    </pre>
+</section>
+{% endblock content %}
+
+
+
