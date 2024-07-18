@@ -5,14 +5,14 @@
 <section class="content">
   <div class="hcenter" style="max-width: 120ch;">
     {{ section.content | safe}}
-  </div>
-  <div>
-    <h2>Professional Work</h2>
-    {{ macros::project_list(projects = section.pages | filter(attribute="extra.personal", value=false))}}
-  </div>
-  <div>
-    <h2> Personal Projects</h2>
-    {{ macros::project_list(projects = section.pages | filter(attribute="extra.personal", value=true))}}
+    <div>
+      <h2>Professional Work</h2>
+      {{ macros::project_list(projects = section.pages | filter(attribute="extra.personal", value=false))}}
+    </div>
+    <div>
+      <h2> Personal Projects</h2>
+      {{ macros::project_list(projects = section.pages | filter(attribute="extra.personal", value=true))}}
+    </div>
   </div>
 </section>
 {% endblock content %}
