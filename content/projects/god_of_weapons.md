@@ -3,6 +3,7 @@ title = "God Of Weapons"
 description = ""
 [extra]
 link_text = "Find Out More"
+personal = false
 +++
 
 An award-winning roguelike that combined inventory tetris and bullet-heaven gameplay!

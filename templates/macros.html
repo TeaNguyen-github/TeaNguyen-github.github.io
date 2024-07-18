@@ -70,6 +70,34 @@
 </nav>
 {% endmacro nav %}
 
+{% macro project_list(projects) %}
+
+<ul class="no-list project-gallery hcenter" style="max-width: 120ch;">
+  {% for entry in projects %}
+  <li>
+    <div class="project-box user-projects {% if loop.index % 2 == 0 %} row-reversed {% endif%}">
+      <img alt="mountains" src="{{ get_url(path='img/mountains.jpg', trailing_slash=false) | safe }}" />
+      <div class="project-summary contents">
+        <h3>
+          {{entry.title}}
+        </h3>
+        <p> {{entry.summary | safe}}</p>
+        <a class="project-link" href=" {{entry.permalink | safe}}">
+          {%if entry.extra.link_text %}
+          {{ entry.extra.link_text }}
+          {% else %}
+          Check it out
+          {% endif %}
+        </a>
+      </div>
+    </div>
+
+  </li>
+  {% endfor %}
+</ul>
+
+{% endmacro project_list%}
+
 {% macro google_analytics() %}
 <!-- Google Analytics -->
 {% if config.extra.google_analytics %}
