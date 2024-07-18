@@ -21,6 +21,10 @@
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="{{ get_url(path='js/sweet-scroll.min.js', trailing_slash=false) | safe }}"></script>
 <script src="{{ get_url(path='js/main.js', trailing_slash=false) | safe }}"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+</script>
 {% endmacro footer %}
 
 {% macro header() %}
@@ -31,17 +35,15 @@
         <span class="site-description">{{ config.extra.user_title | linebreaksbr | safe }}</span>
       </h1>
       <div class="header-icons">
-        <a aria-label="Send email" href="#"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My Twitter" target="_blank" href="#"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
-        <a aria-label="My Google Plus" target="_blank" href="#"><i class="icon fa fa-google-plus" aria-hidden="true"></i></a>
-        <a aria-label="My Github" target="_blank" href="#"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        <a aria-label="Send email" href="mailto://{{ config.extra.email }}"><i class="feather-icon" data-feather="mail"></i></a>
+        <a aria-label="LinkedIn" href="https://www.linkedin.com/in/thai-tuan/"><i class="feather-icon" data-feather="linkedin"></i></a>
       </div>
       <div class="header-links">
         <a class="link" href="#about" data-scroll>About Me</a>
         <a class="link" href="{{get_url(path='projects', trailing_slash=false) | safe }}">Projects</a>
       </div>
   </div>
-  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+  <a class="down" href="#about" data-scroll><i class="feather-icon" data-feather="chevron-down" aria-hidden="true"></i></a>
 </div>
 {% endmacro header %}
 
