@@ -5,6 +5,8 @@
 {{ macros::header()}}
 
 <section class="content">
-    {{ section.content | safe }}
+    <div class="hcenter" style="max-width: 120ch;">
+        {{ section.content | safe }}
+    </div>
 </section>
 {% endblock content %}
