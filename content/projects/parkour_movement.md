@@ -1,14 +1,14 @@
 +++
-title = "God Of Weapons"
+title = "Parkour Movement"
 description = ""
 [extra]
 link_text = "Find Out More"
-personal = false
-img = "img/mountains.jpg"
-img_alt = "Key art for God Of Weapons, showing a knight holding a satchel of weapons and looking at castle in the background."
+personal = true
+img = "img/parkour.png"
+img_alt = "Grey Unreal Engine Mannequin wallruns through prototype level."
 +++
 
-An award-winning roguelike that combined inventory tetris and bullet-heaven gameplay!
+A personal project in which I recreates several popular parkour mechanics seen in triple A video games, including sprinting, wallrunning, wall-leaping, and grappling hook
 
 <!-- more -->
 

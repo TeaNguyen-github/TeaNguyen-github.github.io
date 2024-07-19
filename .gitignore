@@ -1,3 +1,6 @@
 public/
 result
 .direnv/
+
+# Derived resources
+static/processed_images/*

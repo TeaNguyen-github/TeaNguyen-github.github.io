@@ -70,13 +70,20 @@
 </nav>
 {% endmacro nav %}
 
+{% macro img(alt="",path,width=425,height=284) %}
+{% set image = resize_image(path=path, width=width, height=height)%}
+<a href="{{ get_url(path='img/' ~ path , trailing_slash=false) | safe }}">
+  <img alt="{{ alt }}" src="{{ image.url }}" >
+</a>
+{% endmacro img%}
+
 {% macro project_list(projects) %}
 
 <ul class="no-list project-gallery hcenter" style="max-width: 120ch;">
   {% for entry in projects %}
   <li>
     <div class="project-box user-projects {% if loop.index % 2 == 0 %} row-reversed {% endif%}">
-      <img alt="mountains" src="{{ get_url(path='img/mountains.jpg', trailing_slash=false) | safe }}" />
+      {{ self::img(alt=entry.extra.img_alt, path = entry.extra.img) }}
       <div class="project-summary contents">
         <h3>
           {{entry.title}}
