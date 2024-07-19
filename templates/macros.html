@@ -72,7 +72,7 @@
 
 {% macro img(alt="",path,width=425,height=284) %}
 {% set image = resize_image(path=path, width=width, height=height)%}
-<a href="{{ get_url(path='img/' ~ path , trailing_slash=false) | safe }}">
+<a href="{{ get_url(path=path , trailing_slash=false) | safe }}">
   <img alt="{{ alt }}" src="{{ image.url }}" >
 </a>
 {% endmacro img%}
