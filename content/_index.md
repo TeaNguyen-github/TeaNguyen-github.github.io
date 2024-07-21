@@ -2,9 +2,7 @@
 template = "home.html"
 +++
 
-# Love. Passion. Dedication.
-I love games in all of its form, from the made-up things on the playground to TTRPGs to video games. I've been in love with them since before I can even remember. I've gotten into plenty of trouble over it. "You can't make games your life" is something I've heard all too often.
+### Greeting, and welcome to my little corner of the internet!
+My name is Thai Tuan Nguyen Ngoc, though you can call me Tea if you like. I'm a passionate and professionally-trained game designer powered by my love, passion, and dedication to the art of games. I'm well-versed in many genre, but right now I'm a designer at Archmage Games Studio working on their hit title God of Weapons. 
 
-So I've decided to make games my life.
-
-Here is where I showcase the things I do. If any of it caught your interest, feel free to drop me a message.
+I love working on complex, layered systems that tells stories and evoke emotions, and I've also dabbled in level design as well as C# and blueprint scripting to create prototype for my gameplay concepts. Here is where I keep a showcase of the things I think is worth showing. 

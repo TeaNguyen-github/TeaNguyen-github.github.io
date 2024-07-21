@@ -2,15 +2,14 @@
 template = "education.html"
 +++
 
-He he he he.
-Ha Ha Ha Ha Ha Ha Ha
+# Game Design Bachelor of Science
+## Full Sail University 
 
-I've liked some systems with the Ultramodern styling
-[10:28 PM]
-Stuff like Cypher System, or some of the hybrid classes from DnD 4e
-[10:30 PM]
-I think it ultimately depends on how you are presenting the book.
-[10:32 PM]
-Is it something with a theme to it? like a source book for a setting's classes, or adding psionics or a similarly novel origin?
-[10:33 PM]
-Or is it like Dungeon Dozen, a selection of new options of no particular theme?
+During my time at Full Sail University, I was comprehensively trained in every aspects of the game development pipeline from the perspective of a game designer. During this degree program, I am educated in matters such as
+- Psychology of Play
+- Scripting for Designer (Unreal Blueprint)
+- System Design
+- Level Design
+- Game Mechanics
+- Game System Integration
+- Game Balancing 

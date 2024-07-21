@@ -12,9 +12,11 @@ A personal project in which I recreates several popular parkour mechanics seen i
 
 <!-- more -->
 
-Fresh out of college, God of Weapons was the first game I worked on professionally. I was brought on as a designer while it was still in a beta stage. From then on, I have been intimately involved with its many systems, from characters to items to boss designs. Since then on, it is undoubtedly the best break-in into the game industry that I could have hoped for
+After graduating from college, I found that I needed an outlet for my energy during my jobsearch. Since parkour movement was a big element in my thesis project, but I was never happy with what turned out to be the final product, so I decided to revisit and refine the concept while I still have time. While I am happy with what I eventually created, it is unfortunate knowing that I did not have the time to further develop this into something more.
 
-## Achievements
-* Top trending on Steam on release
-* Won Stove 2023 top 10 indie award
-* Won indie best gameplay at the VietnamGameverse 2024 award
+{{ youtube(id="<video 9ZjJqeIRX0>")}}
+
+{{ youtube(id="<video 26ImXMnVJKI>")}}
+
+{{ youtube(id="<video q8pLHLIxBg8>")}}
+
