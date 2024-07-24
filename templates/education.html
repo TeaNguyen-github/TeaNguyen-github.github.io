@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% import "macros.html" as macros %}
-{% block content %}
+
+{% macro education_section() %}
 <section class="content">
     <div class="hcenter" style="max-width: 120ch;">
         {{section.content | safe}}
     </div>
 </section>
-{% endblock content %}
+{% endmacro education_section %}

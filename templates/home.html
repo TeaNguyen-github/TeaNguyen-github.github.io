@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 {% import "macros.html" as macros %}
+{% import "project_section.html" as m_project %}
+{% import "education.html" as m_education %}
+
 
 {% block content %}
 {{ macros::header()}}
-
 <section class="content">
     <div class="hcenter" style="max-width: 120ch;">
-        {{ section.content | safe }}
+        {{ m_project::project_section() }}
+        {{ m_education::education_section() }}
     </div>
 </section>
 {% endblock content %}

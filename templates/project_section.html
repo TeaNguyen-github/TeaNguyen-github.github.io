@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% import "macros.html" as macros %}
 
-{% block content %}
+{% macro project_section() %}
 <section class="content">
   <div class="hcenter" style="max-width: 120ch;">
     {{ section.content | safe}}
@@ -15,4 +15,4 @@
     </div>
   </div>
 </section>
-{% endblock content %}
+{% endmacro project_section %}
