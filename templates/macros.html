@@ -38,12 +38,9 @@
         <a aria-label="Send email" href="mailto://{{ config.extra.email }}"><i class="feather-icon" data-feather="mail"></i></a>
         <a aria-label="LinkedIn" href="https://www.linkedin.com/in/thai-tuan/"><i class="feather-icon" data-feather="linkedin"></i></a>
       </div>
-      <div class="header-links">
-        <a class="link" href="#about" data-scroll>About Me</a>
-        <a class="link" href="{{get_url(path='projects', trailing_slash=false) | safe }}">Projects</a>
-      </div>
+
   </div>
-  <a class="down" href="#about" data-scroll><i class="feather-icon" data-feather="chevron-down" aria-hidden="true"></i></a>
+  <a class="down" href="#intro" data-scroll><i class="feather-icon" data-feather="chevron-down" aria-hidden="true"></i></a>
 </div>
 {% endmacro header %}
 
