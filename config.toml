@@ -1,5 +1,6 @@
 # The URL the site will be built for
 base_url = "https://www.sparrows.dev/TeaNguyen-github.github.io"
+title = "Thai Tuan Nguyen Ngoc - Game Designer"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
