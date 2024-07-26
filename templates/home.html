@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% import "macros.html" as macros %}
 {% import "project_section.html" as m_project %}
-{% import "education.html" as m_education %}
 
 
 {% block content %}
@@ -9,7 +8,48 @@
 <section class="content">
     <div class="hcenter" style="max-width: 120ch;">
         {{ m_project::project_section() }}
-        {{ m_education::education_section() }}
+
+
+        <h2 id="game-design-bachelor-of-science">Game Design Bachelor of Science</h2>
+        <h3 id="full-sail-university">Full Sail University</h3>
+        <p>During my time at Full Sail University, I was comprehensively trained in every aspects of the game
+            development pipeline from the perspective of a game designer. During this degree program, I am educated in
+            matters such as:</p>
+        <ul>
+            <li>Psychology of Play</li>
+            <li>Scripting for Designer (Unreal Blueprint)</li>
+            <li>System Design</li>
+            <li>Level Design</li>
+            <li>Game Mechanics</li>
+            <li>Game System Integration</li>
+            <li>Game Balancing</li>
+        </ul>
+        <h2 id="college-projects">College Projects</h2>
+        <h3 id="quantum-boxes">Quantum Boxes</h3>
+        <p>Quantum Boxes is an extension of the tournamental framework provided by our professor, a basic box-pushing
+            puzzle game. As students, we were tasked with adding a new mechanic to compliment the existing game, and
+            then marry that mechanic to another player's mechanic</p>
+        <p>I added the quantum entanglement portal, an enviromental feature that allows all objects, including the
+            player, to simultaneously occupies all portals as long as they occupy one portal. Afterward, I combined that
+            idea with the concept of pitfalls that another student added. This is one of my proudest achievement</p>
+        <div>
+            <iframe src="https://www.youtube.com/embed/<video HVBsc0zJHX0>" webkitallowfullscreen=""
+                mozallowfullscreen="" allowfullscreen="">
+            </iframe>
+        </div>
+        <h3 id="trinary-facility-escape">Trinary Facility Escape</h3>
+        <p>Trinary facility escape is a solo project that combines both mechanics design and level design. Students were
+            tasked with creating a new mechanic and then slowy introduced it to the player through multiple puzzles. I
+            have elected to create a trinary logic puzzle system, completed with signal-transmitting pipes that update
+            in real time. These trinary logic pipes can be manipulated through switches and operator to open door.</p>
+        <p>Looking back, I am regretful that I did not take more time to explain the logic and operators. The video is
+            too short to fully showcase the concept. </p>
+        <div>
+            <iframe src="https://www.youtube.com/embed/<video HVBsc0zJHX0>" webkitallowfullscreen=""
+                mozallowfullscreen="" allowfullscreen="">
+            </iframe>
+        </div>
+
     </div>
 </section>
 {% endblock content %}
