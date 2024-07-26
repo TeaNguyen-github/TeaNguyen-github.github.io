@@ -13,10 +13,10 @@ A personal project in which I recreates several popular parkour mechanics seen i
 <!-- more -->
 
 After graduating from college, I found that I needed an outlet for my energy during my jobsearch. Since parkour movement was a big element in my thesis project, but I was never happy with what turned out to be the final product, so I decided to revisit and refine the concept while I still have time. While I am happy with what I eventually created, it is unfortunate knowing that I did not have the time to further develop this into something more.
+<!-- TODO: Fix this video not embedding.-->
+{{ youtube(id="9ZjJqeIRX0")}}
 
-{{ youtube(id="<video 9ZjJqeIRX0>")}}
+{{ youtube(id="26ImXMnVJKI")}}
 
-{{ youtube(id="<video 26ImXMnVJKI>")}}
-
-{{ youtube(id="<video q8pLHLIxBg8>")}}
+{{ youtube(id="q8pLHLIxBg8")}}
 
