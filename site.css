@@ -1,0 +1,143 @@
+
+
+.no-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+    --main-color: #1a222c;
+    --secondary-color: #4B5664;
+    --accent-color: #54516A;
+    background: #fff;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: max(16px,1fr) auto max(16px,1fr);
+    grid-template-rows: min-content auto min-content;
+    grid-template-areas: 
+    "nav nav nav"
+    "hero hero hero"
+    ". content ."
+    "footer footer footer";
+}
+
+.nav {
+    grid-area: nav;
+    background: var(--main-color);
+} 
+
+.nav > ul {
+    padding-inline: 2ch;
+    padding-block: 1ch;
+
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+    justify-content: space-evenly;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer {
+    grid-area: footer;
+    background: var(--main-color);
+    padding: 10px 0;
+    margin-top: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.footer > a {
+    text-decoration: none;
+    margin: 0;
+    color: #fff;
+}
+
+.footer > a:hover{
+    color: var(--accent-color);
+}
+
+.footer > a:active{
+    color: var(--accent-color);
+}
+
+#particles-js {
+    grid-area: hero;
+}
+
+
+.content {
+    grid-area: content;
+}
+
+.project-gallery {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.project-box > .project-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-box  a.project-link {
+    width: fit-content;
+}
+
+.row-reversed {
+    flex-direction: row-reverse;
+}
+
+.hcenter {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+.feather-icon {
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    transition: all .7s;
+
+    border-radius: 10px;
+}
+
+.feather-icon:hover {
+    color: var(--main-color);
+    background: #fff;
+}
+
+.feather-icon:active {
+    color: var(--main-color);
+    background: #fff;
+}
+
+
+@keyframes downbounce {
+    from {transform: translate3d(0,0,0);}
+    to {transform: translate3d(0,15px,0);}
+}
+
+.down {
+    animation: downbounce 1.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
